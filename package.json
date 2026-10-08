@@ -1,0 +1,18 @@
+{
+  "name": "sync-snake-grid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "同步多蛇网格移动与头尾碰撞裁决后端（API + CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/engine.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
+
